@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <style>
+    .flexbox img {
+        height: 250px;
+    }
+
+    .flexbox {
+        display: flex;
+        clear: both;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .flexbox > div {
+        border: 4px solid rgb(255,211,25);
+        clear: both;
+        margin: 2%;
+        text-align: center;
+        z-index: 1;
+        font-size: 30px;
+    }
+    img{
+    margin:0;
+    margin-bottom: -7px;
+    }   
+    .opis {
+        display: none;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border: 1px solid #000;
+        font-size: 14px;
+        width: 98.3%;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        transition: opacity 0.3s;
+    }
+        .boxbox:hover .opis {
+        display: block;
+    }
+
+
+    .search-bar {
+    display: flex;
+    position: relative;
+    left:calc(50% - 40px);
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 80px;
+}
+
+/*.search-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+*/
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 4px solid rgb(255,211,25);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Lato;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: rgb(255,211,25);
+    outline: none;
+    transition: .5s;
+}
+.search-bar:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.search-bar i{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: rgb(255,211,25);
+    transition: .2s;
+}
+.search-bar:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+.search-bar button:hover {
+    background-color: #0056b3;
+
+}
+.underline::after{
+  content: "";
+  display: block;
+  border-bottom: 1px solid #000; /* Grubość i kolor podkreślenia */
+  width: 100%; /* Szerokość podkreślenia */
+  position: absolute;
+  bottom: -2px; /* Odległość między tekstem a podkreśleniem */
+
+}
+</style>
+
+
+
+
+
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixSalat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header_left"><a href="index.html"><img class="logo" src="img/logo.png"></a></div>
+    <div class="header_center"><a href="#">SKOMPONUJ POSIŁEK</a><a href="#" class="underline">NASZE POSIŁKI</a><a href="#">KONTAKT</a><a href="articles.html">BLOG</a></div>
+    <div class="header_right"><a href="login.html">LOGOWANIE/REJESTRACJA</a></div>
+    <div class="box">
+        <div class="search-bar">
+        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+        <i class="fas fa-search"></i>
+    </div>
+        <div class="flexbox">
+
+           
+              <div class='boxbox'>
+                  <a class=view href="danie.html"><img src='danie2.png' alt='Makaron penne z sosem pomidorowym, mielonym mięsem wołowym i parmezanem'></a>
+                    <p class=opis>Makaron penne z sosem pomidorowym, mielonym mięsem wołowym i parmezanem</p>
+                    </div>
+             <div class='boxbox'>
+                    <img src='danie3.png' alt='Risotto z grzybami (pieczarki, shiitake)'>
+                    <p class=opis>Risotto z grzybami (pieczarki, shiitake) </p>
+                    </div>
+             <div class='boxbox'>
+                    <img src='danie4.png' alt='Klasyczna sałatka grecka z grillowanymi kawałkami kurczaka'>
+                    <p class=opis>Klasyczna sałatka grecka z grillowanymi kawałkami kurczaka </p>
+                    </div>
+             <div class='boxbox'>
+                    <img src='danie1.png' alt='Wieprzowina po chińsku z kiełkami fasoli mung i sezamem
+Klopsiki w sosie koperkowym'>
+                    <p class=opis>Wieprzowina po chińsku z kiełkami fasoli mung i sezamem
+Klopsiki w sosie koperkowym</p></div>
+
+
+        
+                    
+        
+            
+        
+            
+           
+     
+ 
+</div>
+    </div>
+        
+        
+</body>
+</html>
+

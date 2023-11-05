@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<style>
+		
+		
+*{
+    font-family: Lato;
+}	
+		
+.product
+{
+	width:100%;
+	display:flex;
+    height: 100%;
+}	
+		
+
+.left-panel
+{
+    margin-top: 6vh;
+    margin-left: 6vw;
+	width:25%;
+	padding:1%;
+	text-align:left;
+}
+.right-panel
+{
+    color: lightgray;
+    margin-top: 8vh;
+	width:33%;
+	padding:1%;
+}
+.right-panel h2{
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.right-panel li{
+    font-size: 18px;
+}
+.right-panel ul{
+    margin-top: 6vh;
+}
+.right-panel h3{
+	font-weight: 900;
+    margin-top: 5vh;
+}
+.center{
+    width: 34%;
+}
+.left-panel p{
+    margin-top: 5vh;
+    color:lightgrey;
+    font-size: 18px;
+}
+.left-panel h1 {
+	color: lightgrey;
+	font-size: 40px;
+}
+.left-panel h3 {
+	color: lightgrey;
+	font-weight: 900;
+    margin-top: 5vh;
+}
+.product-image
+{
+	max-width:68%;
+	max-height:30%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.add
+{
+    border: 4px solid rgb(255,211,25);
+	color: white;
+    background: rgb(255,211,25);
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding: 18px;
+	margin-left: 30px;
+	background: none;
+	
+  }
+  .add:hover
+  {
+    background: rgb(255,211,25);
+    color: black;
+  }
+  .separator{
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  height: 200px;
+  clip-path: polygon(0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%, 81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%, 100% 100%, 0% 100%);
+}
+.section2{
+    background-color: white;
+    height: 50vh;
+    width: 85%;
+    margin: auto;
+}
+.section2 h1{
+    margin-top: -5px;
+    font-size: 70px;
+    font-weight:500;
+}
+.section2 p{
+    font-size: 20px;
+}
+.section3{
+    background-color: #19161c;
+    height: 45vh;
+    z-index: 100;
+}
+.section3 p{
+    color: white;
+    margin-top: 20vh;
+}
+.section3 h1{
+    margin-top: 6vh;
+    color: white;
+    font-size: 70px;
+}
+.section3 form{
+    width: 100%;
+    transform: skew(0, -2deg);
+}
+.section3 button:nth-child(2) {
+    transform: translateY(-10px);
+}
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
+  margin: 0;
+  z-index:5;
+  
+  left:0px;
+  float:left;
+}
+.separator2{
+    margin-top: -3vh;
+    padding:2%;
+    transform: skew(0, -1.7deg);
+    background: white;
+    z-index: 0;
+}
+
+.parallax1 > use {
+  animation: move-forever1 10s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax2 > use {
+  animation: move-forever2 8s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax3 > use {
+  animation: move-forever3 6s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax4 > use {
+  animation: move-forever4 4s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+
+	</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MixSalat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<div class="header_left"><a href="index.html"><img class="logo" src="img/logo.png"></a></div>
+<div class="header_center"><a href="#">SKOMPONUJ POSIŁEK</a><a href="menu.html">NASZE POSIŁKI</a><a href="#">KONTAKT</a><a href="articles.html">BLOG</a></div>
+<div class="header_right"><a href="login.html">LOGOWANIE/REJESTRACJA</a></div>
+
+    
+     <div class="box">
+        <div class="">
+            <div class="product"> 
+                    <div class="left-panel">
+                        <h1>Makaron penne <br>z sosem pomidorowym</h1>
+                        <p>Średni bilans makroskładników<br>w tym posiłku<br>prezentuje się następująco:</p>
+                        <h3>białko: 15%<br>tłuszcze: 25%<br>węglowodany: 60%</h3>
+                        </div> 
+                    <div class="center">
+                        <center><img src=danie2.png class="product-image"/></center>
+                        <center>
+                            <form>            
+                            <input type="hidden" name="action" value="add">
+                            <button type="submit" class="add">DODAJ DO KOSZYKA</button>
+                            </form>
+                        </center>
+                    </div>              
+                    <div class="right-panel">
+                        <h2>SKŁADNIKI</h2>
+                        <ul>
+                            <li>Makaron penne</li>
+                            <li>Sos pomidorowy</li>
+                            <li>Mielone mięso wołowe</li>
+                            <li>Parmezan</li>
+                            <li>Cukinia</li>
+                            <li>Zioła, olej oliwkowy, sól i pieprz</li>
+                        </ul>
+                            <h3>kaloryczność~ 700/900 kcal<br><br>waga: 150g</h3>
+				            <br>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="separator">
+    </div>
+    <div class="bg-section2" style="background-color: white;">
+    <div class="section2">
+        <center>
+            <h1>Makaron Penne z sosem pomidorowym</h1>
+            <p>Makaron Penne z sosem pomidorowym to klasyczne danie kuchni włoskiej, które przyciąga uwagę swoim prostym urokiem i bogatym smakiem. To eleganckie połączenie al dente penne, czyli rurkowatego makaronu w kształcie pióra, z sosem pomidorowym o głębokim aromacie i intensywnym smaku.
+
+                <br><br>Na talerzu prezentuje się apetycznie: penne, ugotowane tak, by były lekko elastyczne, otulone są gęstym i kremowym sosem pomidorowym. Sos ma intensywny kolor czerwony i delikatnie otulający aromat świeżych ziół, takich jak bazylii i oregano. Zdecydowany smak pomidorów jest równoważony odrobiną cukru, aby podkreślić ich naturalną słodycz. Całość jest delikatnie doprawiona solą i pieprzem, tworząc harmonijną kompozycję smaków.
+                
+                <br><br>Penne są idealnym nośnikiem tego wyjątkowego sosu, który wypełnia każdy kawałek makaronu smakiem i aromatem. Tekstura penne jest taka, jak być powinna w klasycznym włoskim daniu - al dente, co oznacza, że są lekko chrupiące pod zębami.
+                
+                <br><br>Danie jest często udekorowane świeżą bazylią i świeżo startym parmezanem, które nadają mu dodatkowego aromatu i elegancji. Makaron Penne z sosem pomidorowym to doskonały przykład prostoty, która przekłada się na wyjątkowy smak w kuchni włoskiej. To danie, które cieszy zarówno podniebienie, jak i zmysły.</p>
+        </center>
+    </div>
+    </div>
+    <div class="separator2"></div>
+<!------------------STOPKA------------------>
+    <div class="section3">
+        <center><h1>Potrzebujesz pomocy<br> lub wskazówki?</h1></center>
+            <center><form style="float: left;">            
+            <input type="hidden" name="action" value="add">
+            <button type="submit" class="add">KALKULATOR BMI</button>           
+                <input type="hidden" name="action" value="add">
+                <button type="submit" class="add">KONTAKT ZE SPECJALISTĄ</button>
+            </form></center>
+        <center><p style="clear:both;">© All rights reserved | Wykonanie pjdm.pl | 2023</p></center>
+    </div>
+    <svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#fbdf69"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="rgb(255,211,25)"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+  </g>
+</svg>
+<!----------------KONIEC--STOPKI------------------>
+</body>
+</html>

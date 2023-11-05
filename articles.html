@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixSalat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    .flexbox img {
+        height: 250px;
+    }
+
+    .flexbox {
+        display: flex;
+        clear: both;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .flexbox > div 
+    {
+        color: #ffffff;
+        clear: both;
+        margin: 2%;
+        text-align: center;
+        z-index: 1;
+        font-size: 15spx;
+        text-wrap: wrap;
+    } 
+    .boxbox {
+    display: inline-block;
+    width: calc(25% - 2%);
+    margin: 2%;
+    vertical-align: top;
+}
+
+/* Zmiana układu na mniejszych ekranach */
+@media (max-width: 1550px) {
+    .boxbox {
+        display: block;
+        width: 100%; /* Ustaw na pełną szerokość, aby były pod sobą */
+    }
+}
+    .boxbox:hover .opis {
+        display: block;
+    }
+    /*
+    .more{
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: #ffc117 ; 
+  }
+  */
+  .text-article{
+    text-align: justify;
+    padding-bottom: 3%;
+  }
+  a.more
+  {
+    border: 4px solid rgb(255,211,25);
+	color: white;
+    background: rgb(255,211,25);
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;    
+	letter-spacing: 2px;
+	padding: 18px;
+	margin-left: 30px;
+	background: none;
+    transform: skew(0, -2deg);
+  }
+  a.more:hover
+  {
+    transform: skew(0, -2deg);
+    background: rgb(255,211,25);
+    color: black;
+  }
+  .text-article{
+     margin-bottom: 5%;
+  }
+
+  .separator2{
+    margin-top: -3vh;
+    padding:2%;
+    transform: skew(0, -1.7deg);
+    background: white;
+    z-index: 0;
+    }
+
+    .parallax1 > use {
+    animation: move-forever1 10s linear infinite;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+    }
+    .parallax2 > use {
+    animation: move-forever2 8s linear infinite;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+    }
+    .parallax3 > use {
+    animation: move-forever3 6s linear infinite;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+    }
+    .parallax4 > use {
+    animation: move-forever4 4s linear infinite;
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+    }
+    @keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+    }
+    @keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+    }
+    @keyframes move-forever3 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+    }
+    @keyframes move-forever4 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+    }
+    
+  .separator{
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  height: 200px;
+  clip-path: polygon(0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%, 81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%, 100% 100%, 0% 100%);
+}
+.section2{
+    background-color: white;
+    height: 50vh;
+    width: 85%;
+    margin: auto;
+}
+.section2 h1{
+    margin-top: -5px;
+    font-size: 70px;
+    font-weight:500;
+}
+.section2 p{
+    font-size: 20px;
+}
+.section3{
+    background-color: #19161c;
+    height: 45vh;
+    z-index: 100;
+}
+.section3 p{
+    color: white;
+    margin-top: 20vh;
+}
+.section3 h1{
+    margin-top: 6vh;
+    color: white;
+    font-size: 70px;
+}
+.section3 form{
+    width: 100%;
+    transform: skew(0, -2deg);
+}
+.section3 button:nth-child(2) {
+    transform: translateY(-10px);
+}
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
+  margin: 0;
+  z-index:5;
+  
+  left:0px;
+  float:left;
+}
+.add
+{
+    border: 4px solid rgb(255,211,25);
+	color: white;
+    background: rgb(255,211,25);
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding: 18px;
+	margin-left: 30px;
+	background: none;
+	
+  }
+  .add:hover
+  {
+    background: rgb(255,211,25);
+    color: black;
+  } 
+        </style>
+</head>
+<body>
+    <div class="header_left"><a href="index.html"><img class="logo" src="img/logo.png"></a></div>
+    <div class="header_center"><a href="#">SKOMPONUJ POSIŁEK</a><a href="menu.html">NASZE POSIŁKI</a><a href="#">KONTAKT</a><a href="articles.html">BLOG</a></div>
+    <div class="header_right"><a href="login.html">LOGOWANIE/REJESTRACJA</a></div>
+    
+    
+    <div class="flexbox">
+
+        <div class='boxbox'>
+                <h2>DIETA NA LATO - CO JEŚĆ W UPALNE DNI? POMYSŁY ORAZ INSPIRACJE </h2>
+                <img src="img/img-art1.PNG">
+                <p class="text-article">Lato to nie tylko źródło cennej witaminy D, ale także… ogromne wyzwanie dla organizmu. Wysokie temperatury prowadzić mogą bowiem do odwodnienia organizmu, niedoborów elektrolitowych, udarów…</p>
+                <a href="#" class="more">Czytaj</a>
+        </div>
+        <div class='boxbox'>
+            <h2>MIEDŹ: WŁAŚCIWOŚCI, ROLA W ORGANIZMIE I OBJAWY NIEDOBORU</h2>
+            <img src="img/img-art2.PNG">
+            <p class="text-article">Miedź to pierwiastek chemiczny o symbolu Cu i liczbie atomowej 29. Jest jednym z najważniejszych pierwiastków dla ludzi i ma wiele zastosowań w różnych dziedzinach.…</p><br>
+            <a href="#" class="more">Czytaj</a>
+        </div>
+       <div class='boxbox'>
+            <h2>DIETA WEGAŃSKA – CO JEŚĆ? ZASADY I PRZYKŁADOWY JADŁOSPIS</h2>
+            <img src="img/img-art3.PNG">
+            <p class="text-article">Dieta wegańska rośnie na popularności, stając się poważną „konkurencją” dla klasycznej diety wegetariańskiej. Jak podają współczesne raporty z 2021 roku – nawet powyżej 6% Polaków…</p>
+            <a href="#" class="more">Czytaj</a>
+       </div>
+       <div class='boxbox'>
+            <h2>AMONIOKWASY - WŁAŚCIWOŚCI, PODZIAŁ I ROLA W ORGANIZMIE.</h2>
+            <img src="img/img-art4.PNG">
+            <p class="text-article">Aminokwasy są podstawowymi składnikami budulcowymi białek, które są niezbędne dla prawidłowego funkcjonowania organizmu człowieka. Jako że mają szerokie (i nierzadko kluczową) rolę w wielu procesach…</p>
+            <a href="#" class="more">Czytaj</a>
+       </div>
+        <div class="boxbox">
+            <h2>WITAMINA D: WŁAŚCIWOŚCI W ORGANIZMIE I OBJAWY NIEDOBORU</h2>
+                    <img src="img/img-art5.PNG">
+                    <p class="text-article">W ostatnich latach szczególnie głośno zrobiło się o roli witaminy D, na który niedobór cierpieć może nawet 90% Polaków. Jej niedobory wynikają bezpośrednio z położenia…</p><br>
+                    <a href="#" class="more">Czytaj</a>
+        </div>
+        <div class="boxbox">
+            <h2>CO ZJEŚĆ NA DIETETYCZNĄ KOLACJĘ? 10 POMYSŁÓW OD MIX SALAT</h2>
+            <img src="img/img-art6.PNG">
+            <p class="text-article">Znasz to uczucie, gdy wracając po całym dniu pracy, w skrajnym przemęczeniu, musisz posprzątać w domu, nastawić pranie, wykąpać się i… jeszcze zrobić kolację? Ile…</p>
+            <br><a href="#" class="more">Czytaj</a>
+        </div>
+    </div>
+
+        <!--
+            <p class="text-mid">Najnowsze artykuły!</p>
+            <div class="flexbox">
+                <div class="article">
+                    <h2>DIETA NA LATO - CO JEŚĆ W UPALNE DNI?</h2>
+                    <img src="img/img-art1.PNG">
+                    <p class="text-article">Lato to nie tylko źródło cennej witaminy D, ale także… ogromne wyzwanie dla organizmu. Wysokie temperatury prowadzić mogą bowiem do odwodnienia organizmu, niedoborów elektrolitowych, udarów…</p>
+                    <a href="#" class="more">Czytaj</a>
+                </div>
+                <div class="article">
+                    <h2>MIEDŹ: WŁAŚCIWOŚCI, ROLA W ORGANIZMIE I OBJAWY NIEDOBORU</h2>
+                    <img src="img/img-art2.PNG">
+                    <p class="text-article">Miedź to pierwiastek chemiczny o symbolu Cu i liczbie atomowej 29. Jest jednym z najważniejszych pierwiastków dla ludzi i ma wiele zastosowań w różnych dziedzinach.…</p><br>
+                    <a href="#" class="more">Czytaj</a>
+                </div>
+                <div class="article">
+                    <h2>DIETA WEGAŃSKA – CO JEŚĆ? ZASADY I PRZYKŁADOWY JADŁOSPIS</h2>
+                    <img src="img/img-art3.PNG">
+                    <p class="text-article">Dieta wegańska rośnie na popularności, stając się poważną „konkurencją” dla klasycznej diety wegetariańskiej. Jak podają współczesne raporty z 2021 roku – nawet powyżej 6% Polaków…</p>
+                    <a href="#" class="more">Czytaj</a>
+                </div>
+                <div class="article">
+                    <h2> PODZIAŁ I ROLA W ORGANIZMIE.</h2>
+                    <img src="img/img-art4.PNG">
+                    <p class="text-article">Aminokwasy są podstawowymi składnikami budulcowymi białek, które są niezbędne dla prawidłowego funkcjonowania organizmu człowieka. Jako że mają szerokie (i nierzadko kluczową) rolę w wielu procesach…</p>
+                    <a href="#" class="more">Czytaj</a>
+                </div>
+                <div class="article">
+                    <h2>WITAMINA D: WŁAŚCIWOŚCI, ROLA W ORGANIZMIE I OBJAWY NIEDOBORU</h2>
+                    <img src="img/img-art5.PNG">
+                    <p class="text-article">W ostatnich latach szczególnie głośno zrobiło się o roli witaminy D, na który niedobór cierpieć może nawet 90% Polaków. Jej niedobory wynikają bezpośrednio z położenia…</p><br>
+                    <a href="#" class="more">Czytaj</a>
+                </div>
+                <div class="article">
+                    <h2>CO ZJEŚĆ NA DIETETYCZNĄ KOLACJĘ? 10 POMYSŁÓW OD MIX SALAT</h2>
+                    <img src="img/img-art6.PNG">
+                    <p class="text-article">Znasz to uczucie, gdy wracając po całym dniu pracy, w skrajnym przemęczeniu, musisz posprzątać w domu, nastawić pranie, wykąpać się i… jeszcze zrobić kolację? Ile…</p>
+                    <a href="#" class="more">Czytaj</a>
+                </div>
+            </div>
+             -->
+             <div class="separator">
+            </div>
+            <div class="bg-section2" style="background-color: white;">
+            <div class="section2">
+                <center>
+                    <h1>Interesuje Cie wiecej artykułów?</h1>
+                    <p> Zapraszamy do przeczytania naszego bloga!</p>
+                </center>
+            </div>
+            </div>
+            <div class="separator2"></div>
+<!------------------STOPKA------------------>
+            <div class="section3">
+                <center><h1>Potrzebujesz pomocy<br> lub wskazówki?</h1></center>
+                    <center><form style="float: left;">            
+                    <input type="hidden" name="action" value="add">
+                    <button type="submit" class="add">KALKULATOR BMI</button>           
+                        <input type="hidden" name="action" value="add">
+                        <button type="submit" class="add">KONTAKT ZE SPECJALISTĄ</button>
+                    </form></center>
+                <center><p style="clear:both;">®™© All rights reserved | Wykonanie pjdm.pl | 2023</p></center>
+            </div>
+            <svg class="editorial"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 24 150 28 "
+             preserveAspectRatio="none">
+         <defs>
+         <path id="gentle-wave"
+         d="M-160 44c30 0 
+            58-18 88-18s
+            58 18 88 18 
+            58-18 88-18 
+            58 18 88 18
+            v44h-352z" />
+          </defs>
+          <g class="parallax1">
+           <use xlink:href="#gentle-wave" x="50" y="3" fill="#fbdf69"/>
+          </g>
+            <g class="parallax2">
+           <use xlink:href="#gentle-wave" x="50" y="0" fill="rgb(255,211,25)"/>
+            </g>
+              <g class="parallax3">
+           <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+           </g>
+            <g class="parallax4">
+           <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+          </g>
+        </svg>
+<!----------------KONIEC--STOPKI------------------>
+</body>
+</html>
+

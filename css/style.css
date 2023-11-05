@@ -1,0 +1,134 @@
+*{
+  font-family: Lato;
+}
+body{
+    background: #19161c;
+    margin:0;
+    padding: 0;
+}
+.header_left{
+    width: 20%;
+    height: 10vh;
+    background-color: rgb(255,211,25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.header_center{
+    width: 60%;
+    height: 10vh;
+    background-color:rgb(255,211,25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.header_right{
+    width: 20%;
+    height: 10vh;
+    background-color: rgb(255,211,25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.logo{
+    height: 8vh;
+}
+.slide{
+    height: 100vh;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.container{
+    margin:0;
+    height: 100vh;
+}
+a:not(.view){
+    text-decoration: none;
+    color: black;
+    font-family: Lato;
+    margin: 60px;
+    font-weight: 900;
+}
+a:hover {
+    color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-left:-30px;
+    overflow: hidden;
+  }  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .slide-text {
+    font-family: Lato;
+    position: absolute;
+    left: 10vw; /* Dostosuj odpowiednio pozycję */
+    top: 15vh; /* Dostosuj odpowiednio pozycję */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /*
+  .main-container{
+    margin-top: 5%;
+    padding: 5%;
+    position: absolute;
+    align-items: center;
+  }
+  .text-mid{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Lato;
+    font-weight: 500;
+  }
+  .article {
+    color: #ffffff;
+    float: left;
+    box-sizing: border-box;
+    padding: 2% 2%;
+  }
+  .article img{
+    align-items: center;
+    height: 257px;
+    width: 385px;
+  }
+  .text-article{
+    font-family: Lato;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .more{
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: #ffc117 ; 
+  }
+  */
